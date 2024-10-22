@@ -20,13 +20,13 @@ Before you begin, ensure you have the following installed on your machine:
    git clone https://github.com/juliana1390/ToDoList.git
    cd ToDoList
    ```
-   
-2. **Configure environment variables**
- 
-    Create the .env file in the root directory of the ToDoList project.
 
-    Once you have the .env file open, you can start adding your environment variables in the following format:
-    
+2. **Configure environment variables**
+
+   Create the .env file in the root directory of the ToDoList project.
+
+   Once you have the .env file open, you can start adding your environment variables in the following format:
+
     ```bash
     # Don't forget to change the placeholders below to your actual credentials!
     
@@ -36,16 +36,17 @@ Before you begin, ensure you have the following installed on your machine:
     POSTGRES_DB=your_database_name
     
     # Spring Framework Variables
-    SPRING_DATASOURCE_URL=jdbc:postgresql://your_host:your_port/your_database_name
+    SPRING_DATASOURCE_URL=jdbc:postgresql://database:your_port/your_database_name
     SPRING_DATASOURCE_USERNAME=your_username
     SPRING_DATASOURCE_PASSWORD=your_password
     SPRING_JPA_HIBERNATE_DDL_AUTO=update
      ```
-     
- 3. **Run the backend project**
- 
-    Build and run the Docker containers:
-    
-    ```bash
-    docker compose up --build
-    ```
+   In 'SPRING_DATASOURCE_URL': 'database' is the name of the database service defined in compose.yaml.
+
+3. **Run the backend project**
+
+   Build and run the Docker containers:
+
+   ```bash
+   docker compose up --build
+   ```
