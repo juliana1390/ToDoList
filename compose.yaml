@@ -11,9 +11,6 @@ services:
     ports:
       - '8080:8080'
 
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
   frontend:
     build:
       context: ./frontend
@@ -28,6 +25,8 @@ services:
       - .env
     ports:
       - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
   postgres_data:
