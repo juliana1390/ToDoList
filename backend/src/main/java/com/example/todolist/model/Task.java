@@ -6,10 +6,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
+import javax.persistence.*;
 
 @Setter
 @Getter
 @Entity
+@Table(name = "tasks")
 public class Task {
 
     @Id
