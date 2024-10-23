@@ -32,6 +32,11 @@ button {
   cursor: pointer;
 }
 
+#del_button {
+  background-color: #e51f1f;
+  color: white;
+}
+
 button:hover {
   background-color: #21a1f1;
 }
