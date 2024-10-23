@@ -3,7 +3,8 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: app
+    image: backend
+    container_name: app-backend
     depends_on:
       - postgres
     env_file:
@@ -15,6 +16,8 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    image: frontend
+    container_name: app-frontend
     ports:
       - "3000:80"
 

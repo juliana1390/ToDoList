@@ -1,6 +1,6 @@
-# Backend - To Do List
+# To-Do List
 
-This repository contains a backend project developed with Spring Boot and PostgreSQL, containerized using Docker. Follow the instructions below to set up and run the project in your local environment.
+This repository contains a project developed with Spring Boot, PostgreSQL and React, containerized using Docker. Follow the instructions below to set up and run the project in your local environment.
 
 ## Prerequisites
 
@@ -43,10 +43,14 @@ Before you begin, ensure you have the following installed on your machine:
      ```
    In 'SPRING_DATASOURCE_URL': 'database' is the name of the database service defined in compose.yaml.
 
-3. **Run the backend project**
+3. **Run the project**
 
    Build and run the Docker containers:
 
    ```bash
    docker compose up --build
    ```
+   
+4. **Open in browser**
+
+- http://localhost:3000
